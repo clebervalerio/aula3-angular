@@ -1,0 +1,35 @@
+1º Criar um projeto: ng new aula03
+
+2º Criar dois componentes:
+ng g c paginas/login
+ng g c paginas/admin
+
+3º Criar o autenticador de rotas (Auth Guard) verificador de segurança
+ - ng g g seguranca/autenticar
+ - ng generate guard seguranca/autenticar
+
+◉ CanActivate--------------mais usual 
+ ◯ CanActivateChild
+ ◯ CanDeactivate
+ ◯ CanMatch
+
+4º Baixar os arquivos Bootstrap: npm i bootstrap
+   --verificar dentro da pasta no node_modules se estiver lá esta instalado!
+   --É preciso falar para o angular que o bootstrap esta instalado e pode  "utilizar"
+        para customizar os componentes html
+  --Como fazer :
+       --Na pasta raiz fora do src o angular.json 
+       --> este arquivo faz referencia a pasta nodemodels
+    -- Quando instalamos o bootstrap o arquivo nao instala o bootstrap no angular.json e é necessário
+            fazer manualmente esta seleção.
+    **dentro do arquivo linha de numero 27 
+
+     "src/styles.css" e adiciona acima "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            
+      fazendo isso o angular carrega o bootstrap e suas configurações
+
+5º Executar projeto
+ - ng s
+ - ng serve
+
+ 
