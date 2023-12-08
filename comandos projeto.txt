@@ -29,7 +29,7 @@ ng g c paginas/admin
       fazendo isso o angular carrega o bootstrap e suas configurações
 
 5º Executar projeto
- - ng s
+ - ng s --open
  - ng serve
 
  
