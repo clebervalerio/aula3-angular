@@ -24,7 +24,7 @@ export class LoginComponent {
   // Função para autenticar
   autenticar():void{
     if(
-      this.formulario.value.email === 'contato@ralflima.com' 
+      this.formulario.value.email === 'cleber@gmail.com' 
       && 
       this.formulario.value.senha === '123'
     ){
