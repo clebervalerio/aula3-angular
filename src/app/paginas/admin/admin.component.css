@@ -1,25 +1,43 @@
-
+/* Imagem */
 img {
-    width: 250px;
-    height: 100px;
-    object-fit: fill;
-    margin-left: 30px;
-    margin-top: -10%;
-    
-  }
+  width: auto; /* Largura automática para manter a proporção */
+  height: auto; /* Altura automática para manter a proporção */
+  max-width: 100%; /* Largura máxima 100% do contêiner pai */
+  display: block; /* Remove espaçamento extra abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  object-fit: cover; /* Mantém a proporção da imagem e corta o excesso para preencher a área designada */
+}
 
-  p {width: 250px;
-  height: 100px;
-  margin-left: 110px;
-  margin-top: 60px;
-  }
-  button {
-    margin-inline-start: 15px;
-    margin-left: -150px;
-    margin-top: 55px;
-  }
+/* Botão */
+button {
+  display: block; /* Remove espaçamento extra abaixo do botão */
+  margin: 5% auto 0; /* Margem superior e centralização horizontal, usando porcentagem */
+  padding: 2% 4%; /* Adiciona algum preenchimento responsivo */
+}
 
+/* Parágrafo */
+p {
+  width: 80%; /* Largura responsiva em relação ao contêiner pai */
+  height: auto; /* Altura ajustada automaticamente */
+  margin: 5% auto 0; /* Margem superior e centralização horizontal, usando porcentagem */
+  text-align: center; /* Centraliza o texto horizontalmente dentro do contêiner */
+  letter-spacing: 1px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Tamanho de fonte geral */
+body {
+  font-size: 16px; /* Define um tamanho de fonte padrão */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Altera o tamanho da fonte para dispositivos menores */
+  body {
+    font-size: 14px;
+  }
+  
+  /* Redefine largura do parágrafo para 90% em telas menores */
   p {
-    letter-spacing: 1px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 90%;
   }
+}
